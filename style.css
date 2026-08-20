@@ -1,0 +1,211 @@
+/* 1. Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f3f2ef;
+  color: #191919;
+}
+
+/* 2. Top Navigation */
+nav {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+}
+
+.nav-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  background: #0a66c2;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+nav input {
+  padding: 8px 12px;
+  background: #edf3f8;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.nav-links a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+/* 3. Main Grid Layout */
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 220px 1fr 260px;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+/* 4. Left Sidebar (Profile) */
+.profile {
+  padding: 0;
+  text-align: center;
+}
+
+.banner {
+  height: 50px;
+  background: #a0b4b7;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0a66c2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -25px auto 10px;
+  border: 2px solid #fff;
+  font-weight: bold;
+}
+
+.avatar.small {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+}
+
+.profile h3 {
+  font-size: 1rem;
+}
+
+.profile p {
+  font-size: 0.8rem;
+  color: #666;
+  padding: 4px 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 12px;
+  color: #666;
+}
+
+/* 5. Center Feed */
+.create-post input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.post-buttons, .post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+button:hover {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-user small {
+  color: #666;
+}
+
+.post p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 8px 0;
+}
+
+/* 6. Right Sidebar (News) */
+.news h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.news ul {
+  list-style: none;
+}
+
+.news li {
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.news small {
+  display: block;
+  color: #666;
+}
+
+/* 7. Responsive for Mobile */
+@media (max-width: 850px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .profile, .news {
+    display: none;
+  }
+}

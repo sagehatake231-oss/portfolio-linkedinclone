@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav>
+    <div class="nav-content">
+      <div class="logo">in</div>
+      <input type="text" placeholder="Search">
+      <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Network</a>
+        <a href="#">Jobs</a>
+        <a href="#">Messaging</a>
+        <a href="#">Notifications</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 3-Column Layout -->
+  <main>
+    
+    <!-- Left: Profile Summary -->
+    <aside class="card profile">
+      <div class="banner"></div>
+      <div class="avatar">BK</div>
+      <h3>Brigesh Krishna</h3>
+      <p>Cybersecurity & Linux Enthusiast</p>
+      <hr>
+      <div class="stats">
+        <span>Profile views</span>
+        <strong>142</strong>
+      </div>
+    </aside>
+
+    <!-- Center: Feed & Posts -->
+    <section class="feed">
+      
+      <div class="card create-post">
+        <input type="text" placeholder="Start a post...">
+        <div class="post-buttons">
+          <button>Photo</button>
+          <button>Video</button>
+          <button>Event</button>
+        </div>
+      </div>
+
+      <article class="card post">
+        <div class="post-user">
+          <div class="avatar small">BK</div>
+          <div>
+            <h4>Brigesh Krishna</h4>
+            <small>Cybersecurity Student • 2h</small>
+          </div>
+        </div>
+        <p></p>
+        <hr>
+        <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Right: Trending News -->
+    <aside class="card news">
+      <h3>LinkedIn News</h3>
+      <ul>
+        <li><strong>Cybersecurity hiring rises</strong><small>2,400 readers</small></li>
+        <li><strong>Linux kernel updates</strong><small>1,200 readers</small></li>
+        <li><strong>Web development basics</strong><small>950 readers</small></li>
+      </ul>
+    </aside>
+
+  </main>
+
+</body>
+</html>
